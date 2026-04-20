@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Cosmic Punk-Reggae Theme */
+:root {
+  /* Deep space black background */
+  --background: oklch(0.08 0.005 260);
+  --foreground: oklch(0.95 0.01 90);
+  
+  /* Card with slight transparency for glassmorphism */
+  --card: oklch(0.12 0.01 260);
+  --card-foreground: oklch(0.95 0.01 90);
+  
+  /* Neon Green Primary */
+  --primary: oklch(0.8 0.3 140);
+  --primary-foreground: oklch(0.1 0.02 140);
+  
+  /* Gold Secondary */
+  --secondary: oklch(0.75 0.18 85);
+  --secondary-foreground: oklch(0.15 0.05 85);
+  
+  /* Muted cosmic gray */
+  --muted: oklch(0.2 0.02 260);
+  --muted-foreground: oklch(0.6 0.02 260);
+  
+  /* Reggae Red Accent */
+  --accent: oklch(0.6 0.25 25);
+  --accent-foreground: oklch(0.95 0.01 90);
+  
+  --destructive: oklch(0.55 0.25 25);
+  --destructive-foreground: oklch(0.95 0.01 90);
+  
+  --border: oklch(0.25 0.03 260);
+  --input: oklch(0.18 0.02 260);
+  --ring: oklch(0.8 0.3 140);
+  
+  /* Cosmic accent colors */
+  --neon-green: oklch(0.8 0.3 140);
+  --gold: oklch(0.78 0.18 85);
+  --reggae-red: oklch(0.6 0.25 25);
+  --deep-space: oklch(0.05 0.01 260);
+  
+  --radius: 1rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans), 'Space Grotesk', system-ui, sans-serif;
+  --font-display: var(--font-display), 'Archivo Black', Impact, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-neon-green: var(--neon-green);
+  --color-gold: var(--gold);
+  --color-reggae-red: var(--reggae-red);
+  --color-deep-space: var(--deep-space);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
