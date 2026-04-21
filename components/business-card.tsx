@@ -172,7 +172,7 @@ export function BusinessCard() {
         />
         
         <SocialButton
-          href="/press-kit"
+          href="/presskitc.pdf"
           icon={<FileText size={24} strokeWidth={2.5} />}
           label="Press Kit"
           glowColor={neonGreen}
