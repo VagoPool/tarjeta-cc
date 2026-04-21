@@ -148,7 +148,7 @@ export function BusinessCard() {
       {/* Social Buttons - Alternating Red, Yellow, Green neon glows */}
       <div className="flex flex-col gap-5 w-full">
         <SocialButton
-          href="https://wa.me/1234567890"
+          href="http://api.whatsapp.com/send?phone=524771350894"
           icon={<MessageCircle size={24} strokeWidth={2.5} />}
           label="WhatsApp"
           glowColor={neonGreen}
