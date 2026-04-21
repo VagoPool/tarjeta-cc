@@ -156,7 +156,7 @@ export function BusinessCard() {
         />
         
         <SocialButton
-          href="https://instagram.com/colectivocosmico"
+          href="https://www.instagram.com/colectivo.cosmico?utm_source=qr&igsh=cmJlMWRna2RyYWx1"
           icon={<Instagram size={24} strokeWidth={2.5} />}
           label="Instagram"
           glowColor={reggaeRed}
@@ -164,9 +164,9 @@ export function BusinessCard() {
         />
         
         <SocialButton
-          href="https://open.spotify.com/artist/colectivocosmico"
+          href="https://www.tiktok.com/@colectivo.cosmico?_r=1&_t=ZS-95g1NB0Sf5u"
           icon={<Music size={24} strokeWidth={2.5} />}
-          label="Spotify"
+          label="TikTok"
           glowColor={gold}
           accentColor={neonGreen}
         />
