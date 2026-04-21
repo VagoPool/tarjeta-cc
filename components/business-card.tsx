@@ -113,7 +113,7 @@ export function BusinessCard() {
         
         {/* Logo image */}
         <Image
-          src="/images/logo-colectivo-cosmico.png"
+          src="/logcc.png"
           alt="Colectivo Cosmico Logo"
           width={600}
           height={400}
